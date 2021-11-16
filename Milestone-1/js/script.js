@@ -3,18 +3,16 @@
 
 for (let i = 1; i <= 100; i++) {
     
-    if (i % 3 === 0) {
-        i = "Fizz";
-        console.log(i);
-    } else if (i % 5 === 0) {
-        i = "Buzz";
-        console.log(i);
+    if (i % 3 === 0 && i !==3) {
+        console.log("Fizz");
+    } else if (i % 5 === 0 && i !== 5) {
+        console.log("Buzz");
     } else if (i % 3 === 0 && i % 5 === 0) {
-        i = "FizzBuzz";
-        console.log(i);
-    } 
+        console.log("FizzBuzz");
+    } else {
+        console.log(i)
+    }
 
-    console.log(i);
 
 }
 
